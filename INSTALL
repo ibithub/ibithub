@@ -1,0 +1,9 @@
+Building Ibithub
+
+See doc/readme-qt.rst for instructions on building Ibithub-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Ibithub.
+
+See doc/build-*.txt for instructions on building ibithubd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Ibithub.
