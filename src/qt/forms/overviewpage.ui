@@ -50,7 +50,7 @@
     <number>3</number>
    </property>
   </widget>
-  <widget class="QStackedWidget" name="stackedWidget_3">
+  <widget class="QGroupBox" name="groupBox_3">
    <property name="geometry">
     <rect>
      <x>-70</x>
@@ -73,26 +73,20 @@
    <property name="styleSheet">
     <string notr="true">background: url( /home/ubuntu/Desktop/background2.jpg)</string>
    </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QWidget" name="stackedWidget_3Page1"/>
   </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>140</x>
      <y>50</y>
-     <width>231</width>
+     <width>251</width>
      <height>171</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>URW Palladio L</family>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <italic>true</italic>
      <bold>true</bold>
@@ -160,7 +154,7 @@
             <string notr="true">QLabel { color: red; }</string>
            </property>
            <property name="text">
-            <string notr="true">(out of sync)</string>
+            <string notr="true">(OUT OF SYNC)</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -222,7 +216,7 @@
            <property name="font">
             <font>
              <family>URW Palladio L</family>
-             <pointsize>9</pointsize>
+             <pointsize>7</pointsize>
              <weight>75</weight>
              <italic>true</italic>
              <bold>true</bold>
@@ -279,7 +273,7 @@
            <property name="font">
             <font>
              <family>URW Palladio L</family>
-             <pointsize>9</pointsize>
+             <pointsize>7</pointsize>
              <weight>75</weight>
              <italic>true</italic>
              <bold>true</bold>
@@ -301,7 +295,7 @@
            <property name="font">
             <font>
              <family>URW Palladio L</family>
-             <pointsize>9</pointsize>
+             <pointsize>7</pointsize>
              <weight>75</weight>
              <italic>true</italic>
              <bold>true</bold>
@@ -333,8 +327,8 @@
     <rect>
      <x>389</x>
      <y>10</y>
-     <width>411</width>
-     <height>241</height>
+     <width>431</width>
+     <height>251</height>
     </rect>
    </property>
    <property name="font">
@@ -376,38 +370,14 @@
            <property name="font">
             <font>
              <family>URW Palladio L</family>
-             <pointsize>20</pointsize>
+             <pointsize>10</pointsize>
              <weight>75</weight>
              <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
            <property name="text">
-            <string>&lt;b&gt;Recent transactions&lt;/b&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="labelTransactionsStatus">
-           <property name="font">
-            <font>
-             <family>URW Palladio L</family>
-             <weight>75</weight>
-             <italic>true</italic>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="toolTip">
-            <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Ibithub network after a connection is established, but this process has not completed yet.</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLabel { color: red; }</string>
-           </property>
-           <property name="text">
-            <string notr="true">(out of sync)</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <string>&lt;b&gt;RECENT TRANSACTIONS&lt;/b&gt;</string>
            </property>
           </widget>
          </item>
@@ -466,37 +436,6 @@
     </item>
    </layout>
   </widget>
-  <widget class="QStackedWidget" name="stackedWidget_4">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>250</y>
-     <width>431</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>URW Palladio L</family>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background: url( /home/ubuntu/Desktop/background2.jpg)</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QWidget" name="stackedWidget_3Page1_3"/>
-  </widget>
   <widget class="QStackedWidget" name="stackedWidget_5">
    <property name="geometry">
     <rect>
@@ -528,44 +467,11 @@
    </property>
    <widget class="QWidget" name="stackedWidget_3Page1_4"/>
   </widget>
-  <widget class="QStackedWidget" name="stackedWidget_6">
-   <property name="geometry">
-    <rect>
-     <x>800</x>
-     <y>10</y>
-     <width>41</width>
-     <height>241</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>URW Palladio L</family>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background: url( /home/ubuntu/Desktop/background2.jpg)</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QWidget" name="stackedWidget_3Page1_5"/>
-  </widget>
-  <zorder>stackedWidget_3</zorder>
+  <zorder>groupBox_3</zorder>
   <zorder>layoutWidget</zorder>
   <zorder>layoutWidget</zorder>
   <zorder>labelAlerts</zorder>
-  <zorder>stackedWidget_4</zorder>
   <zorder>stackedWidget_5</zorder>
-  <zorder>stackedWidget_6</zorder>
  </widget>
  <resources/>
  <connections/>
