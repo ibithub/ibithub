@@ -71,7 +71,7 @@
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">background: url( /home/ubuntu/Desktop/background2.png)</string>
+    <string notr="true">background: url(  /home/ubuntu/Desktop/ibithub/src/qt/res/images/background2.png)</string>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -200,7 +200,7 @@
            <property name="font">
             <font>
              <family>URW Palladio L</family>
-             <pointsize>9</pointsize>
+             <pointsize>13</pointsize>
              <weight>75</weight>
              <italic>true</italic>
              <bold>true</bold>
