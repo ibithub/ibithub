@@ -20,7 +20,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(/home/ubuntu/Desktop/ibithub/src/qt/res/icons/bg4.png)</string>
+   <string notr="true"> background:black</string>
   </property>
   <layout class="QVBoxLayout" name="topLayout">
    <item>
@@ -44,7 +44,7 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QFrame" name="frame">
+        <widget class="QFrame" name="frame12">
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -67,6 +67,9 @@
                 <italic>true</italic>
                 <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white</string>
               </property>
               <property name="text">
                <string>iBitHub Wallet</string>
@@ -135,6 +138,9 @@
                 <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">color:white</string>
+              </property>
               <property name="text">
                <string>Balance:</string>
               </property>
@@ -157,6 +163,9 @@
               <property name="toolTip">
                <string>Your current balance</string>
               </property>
+              <property name="styleSheet">
+               <string notr="true">color:white</string>
+              </property>
               <property name="text">
                <string notr="true">0 IBH</string>
               </property>
@@ -176,6 +185,9 @@
                 <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">color:white</string>
+              </property>
               <property name="text">
                <string>Unconfirmed:</string>
               </property>
@@ -191,6 +203,9 @@
                 <italic>true</italic>
                 <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white</string>
               </property>
               <property name="text">
                <string>Immature:</string>
@@ -210,6 +225,9 @@
               </property>
               <property name="toolTip">
                <string>Mined balance that has not yet matured</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white</string>
               </property>
               <property name="text">
                <string notr="true">0 IBH</string>
@@ -235,6 +253,9 @@
               </property>
               <property name="toolTip">
                <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white</string>
               </property>
               <property name="text">
                <string notr="true">0 IBH</string>
@@ -291,6 +312,9 @@
                 <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">color:white</string>
+              </property>
               <property name="text">
                <string>&lt;b&gt;RECENT TRANSACTIONS&lt;/b&gt;</string>
               </property>
@@ -313,8 +337,11 @@
           </item>
           <item>
            <widget class="QListView" name="listTransactions">
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
             <property name="styleSheet">
-             <string notr="true">QListView { background: transparent; }</string>
+             <string notr="true">QListView { background: white; }</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
