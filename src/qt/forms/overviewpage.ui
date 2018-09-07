@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
   <property name="styleSheet">
    <string notr="true"/>
   </property>
@@ -50,38 +53,29 @@
     <number>3</number>
    </property>
   </widget>
-  <widget class="QGroupBox" name="groupBox_3">
-   <property name="geometry">
-    <rect>
-     <x>-70</x>
-     <y>0</y>
-     <width>891</width>
-     <height>261</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>URW Palladio L</family>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background: url(  /home/ubuntu/Desktop/ibithub/src/qt/res/images/background2.png)</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="layoutWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>50</y>
-     <width>251</width>
-     <height>171</height>
+     <x>118</x>
+     <y>90</y>
+     <width>271</width>
+     <height>161</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>271</width>
+     <height>161</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>271</width>
+     <height>161</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -92,9 +86,27 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <widget class="QFrame" name="frame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>269</width>
+        <height>159</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>269</width>
+        <height>159</height>
+       </size>
+      </property>
       <property name="font">
        <font>
         <family>URW Palladio L</family>
@@ -103,8 +115,20 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
       <property name="autoFillBackground">
-       <bool>true</bool>
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::Box</enum>
@@ -112,11 +136,26 @@
       <property name="frameShadow">
        <enum>QFrame::Sunken</enum>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
-       <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
           <widget class="QLabel" name="label_5">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>84</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>84</width>
+             <height>48</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -125,6 +164,9 @@
              <italic>true</italic>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
            </property>
            <property name="text">
             <string>Wallet</string>
@@ -139,6 +181,21 @@
          </item>
          <item>
           <widget class="QLabel" name="labelWalletStatus">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>111</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>111</width>
+             <height>48</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -146,6 +203,9 @@
              <italic>true</italic>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
            </property>
            <property name="toolTip">
             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Ibithub network after a connection is established, but this process has not completed yet.</string>
@@ -163,6 +223,21 @@
          </item>
          <item>
           <spacer name="horizontalSpacer_2">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>38</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>38</width>
+             <height>48</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -170,6 +245,9 @@
              <italic>true</italic>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -184,7 +262,7 @@
          </item>
         </layout>
        </item>
-       <item>
+       <item row="1" column="0">
         <layout class="QFormLayout" name="formLayout_2">
          <property name="fieldGrowthPolicy">
           <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
@@ -197,6 +275,21 @@
          </property>
          <item row="0" column="0">
           <widget class="QLabel" name="label">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>66</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>66</width>
+             <height>23</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -206,6 +299,9 @@
              <bold>true</bold>
             </font>
            </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
            <property name="text">
             <string>Balance:</string>
            </property>
@@ -213,6 +309,21 @@
          </item>
          <item row="0" column="1">
           <widget class="QLabel" name="labelBalance">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>160</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>23</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -224,6 +335,9 @@
            </property>
            <property name="cursor">
             <cursorShape>IBeamCursor</cursorShape>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
            </property>
            <property name="toolTip">
             <string>Your current balance</string>
@@ -238,6 +352,21 @@
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_3">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>73</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>73</width>
+             <height>16</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -246,6 +375,9 @@
              <italic>true</italic>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
            </property>
            <property name="text">
             <string>Unconfirmed:</string>
@@ -254,6 +386,21 @@
          </item>
          <item row="2" column="0">
           <widget class="QLabel" name="labelImmatureText">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>56</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>56</width>
+             <height>16</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -263,6 +410,9 @@
              <bold>true</bold>
             </font>
            </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
            <property name="text">
             <string>Immature:</string>
            </property>
@@ -270,6 +420,21 @@
          </item>
          <item row="2" column="1">
           <widget class="QLabel" name="labelImmature">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>160</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -278,6 +443,9 @@
              <italic>true</italic>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
            </property>
            <property name="toolTip">
             <string>Mined balance that has not yet matured</string>
@@ -292,6 +460,21 @@
          </item>
          <item row="1" column="1">
           <widget class="QLabel" name="labelUnconfirmed">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>160</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>URW Palladio L</family>
@@ -303,6 +486,9 @@
            </property>
            <property name="cursor">
             <cursorShape>IBeamCursor</cursorShape>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
            </property>
            <property name="toolTip">
             <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
@@ -322,14 +508,54 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QGraphicsView" name="graphicsView">
    <property name="geometry">
     <rect>
-     <x>389</x>
+     <x>-80</x>
+     <y>0</y>
+     <width>901</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>901</width>
+     <height>261</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>901</width>
+     <height>261</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: url(/home/ubuntu/Desktop/ibithub/src/qt/res/icons/background2.png)</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
      <y>10</y>
-     <width>431</width>
+     <width>421</width>
      <height>251</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>421</width>
+     <height>251</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>421</width>
+     <height>251</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -339,107 +565,149 @@
      <bold>true</bold>
     </font>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_3">
-    <item>
-     <widget class="QFrame" name="frame_2">
-      <property name="font">
-       <font>
-        <family>URW Palladio L</family>
-        <weight>75</weight>
-        <italic>true</italic>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="autoFillBackground">
-       <bool>true</bool>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Sunken</enum>
-      </property>
-      <property name="lineWidth">
-       <number>2</number>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QLabel" name="label_4">
-           <property name="font">
-            <font>
-             <family>URW Palladio L</family>
-             <pointsize>10</pointsize>
-             <weight>75</weight>
-             <italic>true</italic>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>&lt;b&gt;RECENT TRANSACTIONS&lt;/b&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer">
-           <property name="font">
-            <font>
-             <family>URW Palladio L</family>
-             <weight>75</weight>
-             <italic>true</italic>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QListView" name="listTransactions">
-         <property name="font">
-          <font>
-           <family>URW Palladio L</family>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QListView { background: transparent; }</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::NoFrame</enum>
-         </property>
-         <property name="verticalScrollBarPolicy">
-          <enum>Qt::ScrollBarAlwaysOff</enum>
-         </property>
-         <property name="horizontalScrollBarPolicy">
-          <enum>Qt::ScrollBarAlwaysOff</enum>
-         </property>
-         <property name="selectionMode">
-          <enum>QAbstractItemView::NoSelection</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-   </layout>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <widget class="QListView" name="listTransactions">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>44</y>
+      <width>401</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>401</width>
+      <height>191</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>401</width>
+      <height>191</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Palladio L</family>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListView { background: transparent; }</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="minimumSize">
+     <size>
+      <width>207</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>207</width>
+      <height>22</height>
+     </size>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="minimumSize">
+        <size>
+         <width>159</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>159</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>URW Palladio L</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;b&gt;RECENT TRANSACTIONS&lt;/b&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>URW Palladio L</family>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
   </widget>
-  <zorder>groupBox_3</zorder>
-  <zorder>layoutWidget</zorder>
-  <zorder>layoutWidget</zorder>
+  <zorder>graphicsView</zorder>
   <zorder>labelAlerts</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>frame_2</zorder>
  </widget>
  <resources/>
  <connections/>
