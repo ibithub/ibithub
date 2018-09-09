@@ -5,9 +5,9 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.7.5
-!define COMPANY "Ibithub project"
-!define URL http://www.ibithub.org/
+!define VERSION 1.08
+!define COMPANY "iBitHub"
+!define URL https://www.ibithub.com/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bitcoin.ico"

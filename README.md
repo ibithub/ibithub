@@ -1,22 +1,23 @@
 Ibithub integration/staging tree
 ================================
 
-http://www.ibithub.org
+https://www.ibithub.com
 
-Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Ibithub Developers
+Copyright (c) 2009-2018 Bitcoin Developers
+Copyright (c) 2011-2018 Litecoin Developers
+Copyright (c) 2018 iBitHub Developers
 
 What is Ibithub?
 ----------------
 
-Ibithub is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+Ibithub is a new version of Bitcoin using scrypt as a proof-of-work algorithm.
+ - 5 minute block targets
+ - subsidy halves in 420k blocks (~4 years)
+ - ~21 million total coins
 
 The rest is the same as Bitcoin.
  - 50 coins per block
- - 2016 blocks to retarget difficulty
+ - 288 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
 the Ibithub client sofware, see http://www.ibithub.org.
@@ -45,7 +46,7 @@ match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/ibithub-project/ibithub/tags) are created
+completely stable. [Tags](https://github.com/ibithub/ibithub) are created
 regularly to indicate new official, stable release versions of Ibithub.
 
 Testing
