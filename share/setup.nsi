@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.08
+!define VERSION 0.8.7.5
 !define COMPANY "iBitHub"
 !define URL https://www.ibithub.com/
 
