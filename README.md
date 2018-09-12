@@ -75,7 +75,7 @@ Binary (pre-compiled) wallets are available on all platforms at [https:/ibithub.
 
 ## Donations
 
-We believe in keeping Verge free and open. Any donations to help fuel the development effort are greatly appreciated! :smile:
+We believe in keeping iBitHub free and open. Any donations to help fuel the development effort are greatly appreciated! :smile:
 
 * Address for donations in iBitHub (IBH): `iNj1PseWjpLQ6Ye34X5z5NroDtiLpqKw98`
 * Address for donations in Bitcoin (BTC): `1Cu2HNPGo3fZquDzuwsNLPbAMiP8aKHJ8E`
