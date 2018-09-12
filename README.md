@@ -1,8 +1,8 @@
-# iBitHub [XVG] Source Code
+# iBitHub [IBH] Source Code
 
 ## License
 
-VERGE is released under the terms of the MIT license. See [LICENSE](LICENSE) for more
+iBitHub is released under the terms of the MIT license. See [LICENSE](LICENSE) for more
 information or see https://opensource.org/licenses/MIT.
 
 ## Development Process
