@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>593</width>
+    <width>943</width>
     <height>360</height>
    </rect>
   </property>
@@ -46,11 +46,19 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Keraleeyam</family>
+           <pointsize>52</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string>&lt;b&gt;Ibithub&lt;/b&gt; version</string>
+          <string>&lt;b&gt;iBitHub&lt;/b&gt; version</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -59,11 +67,19 @@
        </item>
        <item>
         <widget class="QLabel" name="versionLabel">
+         <property name="font">
+          <font>
+           <family>Keraleeyam</family>
+           <pointsize>39</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string notr="true">0.3.666-beta</string>
+          <string notr="true">0.8.7.5</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -87,12 +103,20 @@
      </item>
      <item>
       <widget class="QLabel" name="copyrightLabel">
+       <property name="font">
+        <font>
+         <family>Keraleeyam</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string notr="true">Copyright &amp;copy; 2009-YYYY The Bitcoin developers
-Copyright &amp;copy; 2011-YYYY The Litecoin developers
+        <string notr="true">Copyright &amp;copy; 2009-2018 The Bitcoin developers
+Copyright &amp;copy; 2011-2018 The Litecoin developers
 Copyright &amp;copy; 2018 iBitHub Developers</string>
        </property>
        <property name="textFormat">
@@ -105,6 +129,13 @@ Copyright &amp;copy; 2018 iBitHub Developers</string>
      </item>
      <item>
       <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Keraleeyam</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>

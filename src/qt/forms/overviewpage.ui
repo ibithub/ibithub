@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>923</width>
-    <height>290</height>
+    <width>475</width>
+    <height>557</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>923</width>
-    <height>290</height>
+    <width>475</width>
+    <height>557</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>923</width>
-    <height>290</height>
+    <width>475</width>
+    <height>557</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -56,21 +56,9 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>931</width>
-     <height>291</height>
+     <width>471</width>
+     <height>561</height>
     </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>931</width>
-     <height>0</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>931</width>
-     <height>291</height>
-    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/icons/background)</string>
@@ -84,17 +72,20 @@
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>10</y>
-      <width>331</width>
-      <height>280</height>
+      <x>30</x>
+      <y>260</y>
+      <width>421</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background:black</string>
+     <string notr="true">background:black;
+border-style:outset;
+border-width:5px;
+border-color:lime</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -109,15 +100,17 @@
         <widget class="QLabel" name="label_4">
          <property name="font">
           <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
+           <family>Keraleeyam</family>
+           <pointsize>23</pointsize>
            <weight>75</weight>
            <italic>true</italic>
            <bold>true</bold>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black;
+border-width:0px;</string>
          </property>
          <property name="text">
           <string>&lt;b&gt;RECENT TRANSACTIONS&lt;/b&gt;</string>
@@ -140,7 +133,22 @@
       </layout>
      </item>
      <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QListView" name="listTransactions">
+       <property name="font">
+        <font>
+         <family>Keraleeyam</family>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
@@ -166,10 +174,10 @@
    <widget class="QFrame" name="frame12">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>60</y>
-      <width>375</width>
-      <height>194</height>
+      <x>180</x>
+      <y>100</y>
+      <width>271</width>
+      <height>151</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -177,6 +185,9 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background:black;
+border-style:outset;
+border-width:5px;
+border-color:lime
 </string>
     </property>
     <property name="frameShape">
@@ -195,15 +206,17 @@
         <widget class="QLabel" name="label_5">
          <property name="font">
           <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>18</pointsize>
+           <family>Keraleeyam</family>
+           <pointsize>24</pointsize>
            <weight>75</weight>
            <italic>true</italic>
            <bold>true</bold>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black;
+border-width:0px</string>
          </property>
          <property name="text">
           <string>iBitHub Wallet</string>
@@ -227,8 +240,8 @@
         <widget class="QLabel" name="labelWalletStatus">
          <property name="font">
           <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
+           <family>Keraleeyam</family>
+           <pointsize>11</pointsize>
            <weight>75</weight>
            <italic>true</italic>
            <bold>true</bold>
@@ -238,7 +251,9 @@
           <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Ibithub network after a connection is established, but this process has not completed yet.</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">QLabel { color: red; }</string>
+          <string notr="true">color:red;
+border-color:black;
+border-width:0px</string>
          </property>
          <property name="text">
           <string notr="true">(OUT OF SYNC)</string>
@@ -249,6 +264,13 @@
         </widget>
        </item>
       </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
      </item>
      <item>
       <layout class="QFormLayout" name="formLayout_2">
@@ -265,7 +287,7 @@
         <widget class="QLabel" name="label">
          <property name="font">
           <font>
-           <family>Tibetan Machine Uni</family>
+           <family>Keraleeyam</family>
            <pointsize>13</pointsize>
            <weight>75</weight>
            <italic>true</italic>
@@ -273,7 +295,9 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black;
+border-width:0px</string>
          </property>
          <property name="text">
           <string>Balance:</string>
@@ -284,8 +308,8 @@
         <widget class="QLabel" name="labelBalance">
          <property name="font">
           <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
+           <family>Keraleeyam</family>
+           <pointsize>13</pointsize>
            <weight>75</weight>
            <italic>true</italic>
            <bold>true</bold>
@@ -298,7 +322,9 @@
           <string>Your current balance</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black;
+border-width:0px</string>
          </property>
          <property name="text">
           <string notr="true">0 IBH</string>
@@ -312,62 +338,20 @@
         <widget class="QLabel" name="label_3">
          <property name="font">
           <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
+           <family>Keraleeyam</family>
+           <pointsize>13</pointsize>
            <weight>75</weight>
            <italic>true</italic>
            <bold>true</bold>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black;
+border-width:0px</string>
          </property>
          <property name="text">
           <string>Unconfirmed:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="labelImmatureText">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:white</string>
-         </property>
-         <property name="text">
-          <string>Immature:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="labelImmature">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>Mined balance that has not yet matured</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:white</string>
-         </property>
-         <property name="text">
-          <string notr="true">0 IBH</string>
-         </property>
-         <property name="textInteractionFlags">
-          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
          </property>
         </widget>
        </item>
@@ -375,8 +359,8 @@
         <widget class="QLabel" name="labelUnconfirmed">
          <property name="font">
           <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
+           <family>Keraleeyam</family>
+           <pointsize>13</pointsize>
            <weight>75</weight>
            <italic>true</italic>
            <bold>true</bold>
@@ -389,7 +373,60 @@
           <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black;
+border-width:0px</string>
+         </property>
+         <property name="text">
+          <string notr="true">0 IBH</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelImmatureText">
+         <property name="font">
+          <font>
+           <family>Keraleeyam</family>
+           <pointsize>13</pointsize>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:white;
+border-color:black;
+border-width:0px</string>
+         </property>
+         <property name="text">
+          <string>Immature:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="labelImmature">
+         <property name="font">
+          <font>
+           <family>Keraleeyam</family>
+           <pointsize>13</pointsize>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>Mined balance that has not yet matured</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:white;
+border-color:black;
+border-width:0px</string>
          </property>
          <property name="text">
           <string notr="true">0 IBH</string>
