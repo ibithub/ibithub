@@ -6,15 +6,9 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>509</width>
-    <height>357</height>
+    <width>1082</width>
+    <height>642</height>
    </rect>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>509</width>
-    <height>357</height>
-   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -52,8 +46,8 @@ height:357px;
     <rect>
      <x>-30</x>
      <y>-20</y>
-     <width>571</width>
-     <height>391</height>
+     <width>1111</width>
+     <height>661</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -68,17 +62,20 @@ height:357px;
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>110</y>
+      <x>350</x>
+      <y>20</y>
       <width>331</width>
-      <height>251</height>
+      <height>241</height>
      </rect>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background:black</string>
+     <string notr="true">background:black;
+border-style:outset;
+border-width:1px;
+border-color:lime;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -107,19 +104,6 @@ height:357px;
           <string>&lt;b&gt;RECENT TRANSACTIONS&lt;/b&gt;</string>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -150,9 +134,9 @@ height:357px;
    <widget class="QFrame" name="frame12">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>30</y>
-      <width>331</width>
+      <x>40</x>
+      <y>120</y>
+      <width>301</width>
       <height>131</height>
      </rect>
     </property>
@@ -160,7 +144,11 @@ height:357px;
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background:black;
+     <string notr="true">
+background:black;
+border-style:outset;
+border-width:1px;
+border-color:lime;
 </string>
     </property>
     <property name="frameShape">
@@ -203,7 +191,10 @@ height:357px;
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">QLabel { color: red; }</string>
+          <string notr="true">
+QLabel { color: red; }
+
+</string>
          </property>
          <property name="text">
           <string notr="true">(OUT OF SYNC)</string>
@@ -241,7 +232,8 @@ height:357px;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black</string>
          </property>
          <property name="text">
           <string>BALANCE:</string>
@@ -266,7 +258,8 @@ height:357px;
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black</string>
          </property>
          <property name="text">
           <string notr="true">0 IBH</string>
@@ -288,7 +281,8 @@ height:357px;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black</string>
          </property>
          <property name="text">
           <string>Unconfirmed:</string>
@@ -307,7 +301,8 @@ height:357px;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black</string>
          </property>
          <property name="text">
           <string>Immature:</string>
@@ -329,7 +324,8 @@ height:357px;
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black</string>
          </property>
          <property name="text">
           <string notr="true">0 IBH</string>
@@ -357,7 +353,8 @@ height:357px;
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">color:white;
+border-color:black</string>
          </property>
          <property name="text">
           <string notr="true">0 IBH</string>
