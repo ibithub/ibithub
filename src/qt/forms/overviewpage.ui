@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1082</width>
-    <height>642</height>
+    <width>660</width>
+    <height>251</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,6 +49,18 @@ height:357px;
      <width>1111</width>
      <height>661</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1111</width>
+     <height>661</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1111</width>
+     <height>661</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/icons/background)</string>
