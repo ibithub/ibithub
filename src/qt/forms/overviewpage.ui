@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>660</width>
-    <height>251</height>
+    <width>930</width>
+    <height>550</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>930</width>
+    <height>550</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -63,7 +69,8 @@ height:357px;
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/icons/background)</string>
+    <string notr="true">background-image: url(:/icons/background);
+background-repeat: repeat-n;</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -74,10 +81,10 @@ height:357px;
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>20</y>
-      <width>331</width>
-      <height>241</height>
+      <x>700</x>
+      <y>190</y>
+      <width>201</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -119,266 +126,186 @@ border-color:lime;</string>
        </item>
       </layout>
      </item>
-     <item>
-      <widget class="QListView" name="listTransactions">
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QListView { background: white; }</string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::NoFrame</enum>
-       </property>
-       <property name="verticalScrollBarPolicy">
-        <enum>Qt::ScrollBarAlwaysOff</enum>
-       </property>
-       <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarAlwaysOff</enum>
-       </property>
-       <property name="selectionMode">
-        <enum>QAbstractItemView::NoSelection</enum>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="frame12">
+   <widget class="QLabel" name="labelBalance">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>120</y>
-      <width>301</width>
-      <height>131</height>
+      <x>460</x>
+      <y>348</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tibetan Machine Uni</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:black;
+background:white;</string>
+    </property>
+    <property name="text">
+     <string notr="true">0 IBH</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>330</y>
+      <width>83</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tibetan Machine Uni</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:black;
+background:white;</string>
+    </property>
+    <property name="text">
+     <string>BALANCE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelWalletStatus">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>140</y>
+      <width>89</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tibetan Machine Uni</family>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel { color: red; }
+
+</string>
+    </property>
+    <property name="text">
+     <string notr="true">(OUT OF SYNC)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelImmatureText">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>450</y>
+      <width>72</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tibetan Machine Uni</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;background:black</string>
+    </property>
+    <property name="text">
+     <string>Immature:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelImmature">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>450</y>
+      <width>176</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tibetan Machine Uni</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;background:black</string>
+    </property>
+    <property name="text">
+     <string notr="true">0 IBH</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QListView" name="listTransactions">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>250</y>
+      <width>311</width>
+      <height>186</height>
      </rect>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-background:black;
-border-style:outset;
-border-width:1px;
-border-color:lime;
-</string>
+     <string notr="true">QListView { background: white; }</string>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Box</enum>
+     <enum>QFrame::NoFrame</enum>
     </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
-    <property name="lineWidth">
-     <number>2</number>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QLabel" name="labelWalletStatus">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>7</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
-QLabel { color: red; }
-
-</string>
-         </property>
-         <property name="text">
-          <string notr="true">(OUT OF SYNC)</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QFormLayout" name="formLayout_2">
-       <property name="fieldGrowthPolicy">
-        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-       </property>
-       <property name="horizontalSpacing">
-        <number>14</number>
-       </property>
-       <property name="verticalSpacing">
-        <number>12</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>10</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:white;
-border-color:black</string>
-         </property>
-         <property name="text">
-          <string>BALANCE:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="labelBalance">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>10</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>IBeamCursor</cursorShape>
-         </property>
-         <property name="toolTip">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:white;
-border-color:black</string>
-         </property>
-         <property name="text">
-          <string notr="true">0 IBH</string>
-         </property>
-         <property name="textInteractionFlags">
-          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_3">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:white;
-border-color:black</string>
-         </property>
-         <property name="text">
-          <string>Unconfirmed:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="labelImmatureText">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:white;
-border-color:black</string>
-         </property>
-         <property name="text">
-          <string>Immature:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="labelImmature">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:white;
-border-color:black</string>
-         </property>
-         <property name="text">
-          <string notr="true">0 IBH</string>
-         </property>
-         <property name="textInteractionFlags">
-          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLabel" name="labelUnconfirmed">
-         <property name="font">
-          <font>
-           <family>Tibetan Machine Uni</family>
-           <pointsize>9</pointsize>
-           <weight>75</weight>
-           <italic>true</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>IBeamCursor</cursorShape>
-         </property>
-         <property name="toolTip">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:white;
-border-color:black</string>
-         </property>
-         <property name="text">
-          <string notr="true">0 IBH</string>
-         </property>
-         <property name="textInteractionFlags">
-          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
    </widget>
   </widget>
   <zorder>frame</zorder>
