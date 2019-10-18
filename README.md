@@ -1,105 +1,79 @@
-# iBitHub [IBH] Source Code
+Ibithub Core integration/staging tree
+=====================================
 
-## License
+[![Build Status](https://travis-ci.org/ibithub-project/ibithub.svg?branch=master)](https://travis-ci.org/ibithub-project/ibithub)
 
-iBitHub is released under the terms of the MIT license. See [LICENSE](LICENSE) for more
+https://ibithub.org
+
+What is Ibithub?
+----------------
+
+Ibithub is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Ibithub uses peer-to-peer technology to operate
+with no central authority: managing transactions and issuing money are carried
+out collectively by the network. Ibithub Core is the name of open source
+software which enables the use of this currency.
+
+For more information, as well as an immediately useable, binary version of
+the Ibithub Core software, see [https://ibithub.org](https://ibithub.org).
+
+License
+-------
+
+Ibithub Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
-## Development Process
+Development Process
+-------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [GitHub](https://github.com/ibithub/ibithub) 
+completely stable. [Tags](https://github.com/ibithub-project/ibithub/tags) are created
+regularly to indicate new official, stable release versions of Ibithub Core.
 
+The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
+The developer [mailing list](https://groups.google.com/forum/#!forum/ibithub-dev)
+should be used to discuss complicated or controversial changes before working
+on a patch set.
 
-## Testing
+Developer IRC can be found on Freenode at #ibithub-dev.
 
-Testing and code review is the bottleneck for development; we get more pull requests than we can review and test on short notice. Please be patient and remember this is a security-critical project where any mistake might cost people lots of money.
+Testing
+-------
 
-## Specifications
-Specification | Value
---- | ---
-Protocol | PoW (proof of Work)
-Algorithms | scrypt
-Blocktime | 5 Minutes
-Total Supply | 21,000,000 IBH
-RPC port | 2333
-P2P port | 2333
-pre-mine | N/A
-ICO | N/A
+Testing and code review is the bottleneck for development; we get more pull
+requests than we can review and test on short notice. Please be patient and help out by testing
+other people's pull requests, and remember this is a security-critical project where any mistake might cost people
+lots of money.
 
-## Blockrewards
-Block Number | Reward
---- | ---
-0 to 210,000 | 10,500,000 coins
-210,000 to 420,000 | 5,250,000 coins
-420,000 to 630,000 | 2,625,000 coins
-630,000 to 840,000 | 1,312,500 coins
-840,000 to 1,050,000 | 656,250 coins
-1,050,000 to 1,260,000 | 328,125 coins
-1,260,000 to 1,470,000 | 164,062 coins
-1,470,000 to 1,680,000 | 82,031 coins
-1,680,000 to 1,890,000 | 41,015 coins
-1,890,000 to 2,310,000 | 20,507 coins
-2,310,000  to 2,520,000 | 10,253 coins
-2,520,000 to 2,730,000 | 5,126 coins
-2,730,000 to 2,940,000 | 2,563 coins
-2,940,000 to 3,150,000 | 1,281 coins
-3,150,000 to 3,360,000 | 640 coins
-3,360,000 to 3,570,000 | 320 coins
-3,570,000  to 3,780,000 | 160 coins
-3,780,000 to 3,780,000 | 80 coins
-3,780,000 to 3,990,000 | 40 coins
+### Automated Testing
 
-## Resources
+Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
+submit new unit tests for old code. Unit tests can be compiled and run
+(assuming they weren't disabled in configure) with: `make check`. Further details on running
+and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
 
-* [Blockchain Explorer](https://weekendpool.net/explorer/IBH)
-* [Mining Pool #1](https://weekendpool.net/)
-* [Mining Pool #2](https://pool.ibithub.com/MPOS/public)
-* [White Paper](https://www.ibithub.com/whitepaper.PDF)
+There are also [regression and integration tests](/test), written
+in Python, that are run automatically on the build server.
+These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
 
-### Community
+The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
 
-* [BitcoinTalk](https://bitcointalk.org/index.php?topic=4961073)
-* [Discord](https://discord.gg/KfS3FSf)
-* [Facebook](https://www.facebook.com/IBITHUB/)
-* [Reddit](https://www.reddit.com/user/iBitHub)
+### Manual Quality Assurance (QA) Testing
 
-## Wallets
+Changes should be tested by somebody other than the developer who wrote the
+code. This is especially important for large or high-risk changes. It is useful
+to add a test plan to the pull request description if testing the changes is
+not straightforward.
 
-Binary (pre-compiled) wallets are available on all platforms at [https:/ibithub.com](https://www.ibithub.com/).
+Translations
+------------
 
-> **Note:** **Important!** Only download pre-compiled wallets from the official iBitHub website or official Github repos.
+We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
+Translations are converted to Ibithub periodically.
 
+Translations are periodically pulled from Transifex and merged into the git repository. See the
+[translation process](doc/translation_process.md) for details on how this works.
 
-
-## Donations
-
-We believe in keeping iBitHub free and open. Any donations to help fuel the development effort are greatly appreciated! :smile:
-
-* Address for donations in iBitHub (IBH): `iNj1PseWjpLQ6Ye34X5z5NroDtiLpqKw98`
-* Address for donations in Bitcoin (BTC): `1Cu2HNPGo3fZquDzuwsNLPbAMiP8aKHJ8E`
-
-## Special Shout Outs
-
-Special thanks to the following people that have helped make iBitHub possible.
-
-
-
-
-## _Please do not report security vulnerabilities publicly._
-
-
-## How to report a bug
-
-### Code issues
-
-Since we are a 100% open-source project we strongly prefer if you create a pull-request on Github in the proper repository with the necessary fix.
-
-Alternatively, If you would like to make a suggestion regarding a potential fix please send an email to admin@ibithub.com
-
-
-### Security-related issues
-
-Contact the developers privately by sending an e-mail to admin@ibithub.com with the details of the issue. Do not post the issue on github or anywhere else until the issue has been resolved.
-
+**Important**: We do not accept translation changes as GitHub pull requests because the next
+pull from Transifex would automatically overwrite them again.
