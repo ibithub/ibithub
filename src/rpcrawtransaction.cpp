@@ -137,10 +137,10 @@ Value getrawtransaction(const Array& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "getrawtransaction <txid> [verbose=0]\n"
-            "If verbose=0, returns a string that is\n"
-            "serialized, hex-encoded data for <txid>.\n"
-            "If verbose is non-zero, returns an Object\n"
-            "with information about <txid>.");
+            "If verbose is 'true', returns an Object\n"
+            "with information about <txid>.\n"
+            "If verbose is 'false' or omitted, returns a string that is\n"
+            "serialized, hex-encoded data for <txid>.");
 
     uint256 hash = ParseHashV(params[0], "parameter 1");
 
