@@ -1095,7 +1095,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Ibithub: 3.5 days
+static const int64 nTargetTimespan = 10 * 10 * 2 * 3; // Ibithub: 3.5 days
 static const int64 nTargetSpacing = 5 * 60; // Ibithub: 2.5 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
