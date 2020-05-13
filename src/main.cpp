@@ -1281,7 +1281,89 @@ unsigned int static OldGetNextWorkRequired(const CBlockIndex* pindexLast, const 
     return bnNew.GetCompact();
 }
 
-unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
+
+unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlockHeader *pblock) {
+    /* current difficulty formula, darkcoin - DarkGravity v3, written by Evan Duffield - evan@darkcoin.io */
+    const CBlockIndex *BlockLastSolved = pindexLast;
+    const CBlockIndex *BlockReading = pindexLast;
+    const CBlockHeader *BlockCreating = pblock;
+    BlockCreating = BlockCreating;
+    int64 nActualTimespan = 0;
+    int64 LastBlockTime = 0;
+    int64 PastBlocksMin = 24;
+    int64 PastBlocksMax = 24;
+    int64 CountBlocks = 0;
+    CBigNum PastDifficultyAverage;
+    CBigNum PastDifficultyAveragePrev;
+
+    if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) {
+        // This is the first block or the height is < PastBlocksMin
+        // Return minimal required work. (1e0fffff)
+        return bnProofOfWorkLimit.GetCompact(); 
+    }
+    
+    // loop over the past n blocks, where n == PastBlocksMax
+    for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
+        if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
+        CountBlocks++;
+
+        // Calculate average difficulty based on the blocks we iterate over in this for loop
+        if(CountBlocks <= PastBlocksMin) {
+            if (CountBlocks == 1) { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
+            else { PastDifficultyAverage = ((PastDifficultyAveragePrev * CountBlocks)+(CBigNum().SetCompact(BlockReading->nBits))) / (CountBlocks+1); }
+            PastDifficultyAveragePrev = PastDifficultyAverage;
+        }
+
+        // If this is the second iteration (LastBlockTime was set)
+        if(LastBlockTime > 0){
+            // Calculate time difference between previous block and current block
+            int64 Diff = (LastBlockTime - BlockReading->GetBlockTime());
+            // Increment the actual timespan
+            nActualTimespan += Diff;
+        }
+        // Set LasBlockTime to the block time for the block in current iteration
+        LastBlockTime = BlockReading->GetBlockTime();      
+
+        if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
+        BlockReading = BlockReading->pprev;
+    }
+    
+    // bnNew is the difficulty
+    CBigNum bnNew(PastDifficultyAverage);
+
+    // nTargetTimespan is the time that the CountBlocks should have taken to be generated.
+    int64 nTargetTimespan = CountBlocks*nTargetSpacing;
+
+    // Limit the re-adjustment to 3x or 0.33x
+    // We don't want to increase/decrease diff too much.
+    if (nActualTimespan < nTargetTimespan/3)
+        nActualTimespan = nTargetTimespan/3;
+    if (nActualTimespan > nTargetTimespan*3)
+        nActualTimespan = nTargetTimespan*3;
+
+    // Calculate the new difficulty based on actual and target timespan.
+    bnNew *= nActualTimespan;
+    bnNew /= nTargetTimespan;
+
+    // If calculated difficulty is lower than the minimal diff, set the new difficulty to be the minimal diff.
+    if (bnNew > bnProofOfWorkLimit){
+        bnNew = bnProofOfWorkLimit;
+    }
+    
+    // Some logging.
+    // TODO: only display these log messages for a certain debug option.
+    printf("Difficulty Retarget - Dark Gravity Wave 3\n");
+    printf("Before: %08x %s\n", BlockLastSolved->nBits, CBigNum().SetCompact(BlockLastSolved->nBits).getuint256().ToString().c_str());
+    printf("After: %08x %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
+
+    // Return the new diff.
+    return bnNew.GetCompact();
+}
+
+
+
+
+unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
         static const int64 BlocksTargetSpacing =  5 * 60; // 1.5 minute
         static const unsigned int TimeDaySeconds = 60 * 60 * 24;
@@ -1300,15 +1382,36 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
 
 
 
+unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
+{
+    int DiffMode = 1; // legacy diff-mode
+    if (fTestNet)
+    {
+        if (pindexLast->nHeight+1 >= 2116) { DiffMode = 2; }
+    }
+    else
+    {
+        if (pindexLast->nHeight+1 >= 100000) { DiffMode = 2; }
+        else if (pindexLast->nHeight+1 >= 146300) { DiffMode = 3; } // DGW3
+    }
 
-
-
-
-
-
-
-
-
+    if (DiffMode == 1)
+    {
+        //legacy diff mode
+        return OldGetNextWorkRequired(pindexLast, pblock);
+    }
+    else if (DiffMode == 2)
+    {
+        // KGW - legacy
+        return GetNextWorkRequired_V2(pindexLast, pblock);
+    }
+    else if (DiffMode == 3)
+    {
+        // DGW3
+        return DarkGravityWave3(pindexLast, pblock);
+    }
+    return DarkGravityWave3(pindexLast, pblock); // DGW3
+}
 
 
 
