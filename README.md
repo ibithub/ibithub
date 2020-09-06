@@ -54,8 +54,8 @@ Block Number | Reward
 ## Resources
 
 * [Blockchain Explorer](https://weekendpool.net/explorer/IBH)
-* [Mining Pool #1](https://weekendpool.net/)
-* [Mining Pool #2](https://pool.ibithub.com/MPOS/public)
+* [Mining Pools ](https://miningpoolstats.stream/ibithub/)
+
 * [White Paper](https://www.ibithub.com/whitepaper.PDF)
 
 ### Community
