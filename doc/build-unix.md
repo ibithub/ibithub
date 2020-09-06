@@ -62,10 +62,10 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # Install dependencies there might be more based on your system
-# However below instructions are for the fresh Ubuntu install/server
-# Please carefully watch the logs because if something could not be install
-# You have to make sure it is installed properly by trying the command or that particular
-# dependency again
+ However below instructions are for the fresh Ubuntu install/server
+ Please carefully watch the logs because if something could not be install
+ You have to make sure it is installed properly by trying the command or that particular
+ dependency again
 
 sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
 sudo apt-get install libboost-all-dev
@@ -79,7 +79,7 @@ cd ~
 git clone https://github.com/ibithub/ibithubwt.git
 
 # Bitcoin uses the Berkley DB 4.8
-# We need to install it as well
+ We need to install it as well
 # Download & Install Berkley DB
 # -----------------------------
 cd ~
