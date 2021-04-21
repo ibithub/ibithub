@@ -2,7 +2,7 @@
 
 // Copyright (c) 2009-2018 The Bitcoin Core developers
 
-// Copyright (c) 2018-2020 iBitHub Developers
+// Copyright (c) 2018-2021 iBitHub Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -77,7 +77,7 @@ sudo apt-get install libboost-all-dev
 
 sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
-sudo apt-get install libqrencode-dev autoconf openssl libssl-dev libevent-dev
+sudo apt-get install libqrencode-dev autoconf openssl libssl1.0-dev libevent-dev
 
 sudo apt-get install libminiupnpc-dev
 
