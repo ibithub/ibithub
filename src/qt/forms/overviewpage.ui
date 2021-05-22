@@ -6,14 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>550</width>
-    <height>417</height>
+    <width>904</width>
+    <height>478</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>904</width>
+    <height>478</height>
+   </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>930</width>
-    <height>550</height>
+    <width>904</width>
+    <height>478</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -75,10 +81,10 @@ background-repeat: repeat-n;</string>
    <widget class="QLabel" name="labelBalance">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>70</y>
-      <width>421</width>
-      <height>51</height>
+      <x>150</x>
+      <y>130</y>
+      <width>601</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -96,10 +102,11 @@ background-repeat: repeat-n;</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:gold;
+     <string notr="true">color:gray;
 background:none;
-font-size:33px;
-font:bold;</string>
+font-size:44px;
+font:bold;
+</string>
     </property>
     <property name="text">
      <string notr="true">0 IBH</string>
@@ -111,8 +118,8 @@ font:bold;</string>
    <widget class="QLabel" name="labelWalletStatus">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>60</y>
+      <x>180</x>
+      <y>100</y>
       <width>89</width>
       <height>20</height>
      </rect>
@@ -145,8 +152,8 @@ QLabel { color: red; background:none; }
    <widget class="QLabel" name="labelImmatureText">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>60</y>
+      <x>590</x>
+      <y>100</y>
       <width>72</width>
       <height>21</height>
      </rect>
@@ -170,9 +177,9 @@ QLabel { color: red; background:none; }
    <widget class="QLabel" name="labelImmature">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>60</y>
-      <width>231</width>
+      <x>550</x>
+      <y>110</y>
+      <width>201</width>
       <height>21</height>
      </rect>
     </property>
@@ -201,9 +208,9 @@ QLabel { color: red; background:none; }
    <widget class="QListView" name="listTransactions">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>170</y>
-      <width>461</width>
+      <x>370</x>
+      <y>210</y>
+      <width>371</width>
       <height>201</height>
      </rect>
     </property>
