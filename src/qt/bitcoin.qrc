@@ -1,6 +1,5 @@
 <RCC>
   <qresource prefix="/icons">
-    <file>res/icons/ibh.mp4</file>
     <file>res/icons/ibh.mkv.png</file>
     <file alias="bitcoin">res/icons/bitcoin.png</file>
     <file>res/icons/bitcoin.png</file>
