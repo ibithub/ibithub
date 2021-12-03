@@ -89,7 +89,6 @@ background-repeat: repeat-n;</string>
     </property>
     <property name="font">
      <font>
-      <family>Keraleeyam,Italic,Bold</family>
       <pointsize>-1</pointsize>
      </font>
     </property>
@@ -107,11 +106,7 @@ background-repeat: repeat-n;</string>
 
 
 background:none;
-font-size:42px;
-
-font-family: &quot;Keraleeyam&quot;,&quot;Italic&quot;, &quot;Bold&quot;;
-
-
+font-size:32px;
 </string>
     </property>
     <property name="text">
