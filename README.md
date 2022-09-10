@@ -31,37 +31,31 @@ ICO | N/A
 ## Blockrewards
 Block Number | Reward
 --- | ---
-0 to 210,000 | 10,500,000 coins
-210,000 to 420,000 | 5,250,000 coins
-420,000 to 630,000 | 2,625,000 coins
-630,000 to 840,000 | 1,312,500 coins
-840,000 to 1,050,000 | 656,250 coins
-1,050,000 to 1,260,000 | 328,125 coins
-1,260,000 to 1,470,000 | 164,062 coins
-1,470,000 to 1,680,000 | 82,031 coins
-1,680,000 to 1,890,000 | 41,015 coins
-1,890,000 to 2,310,000 | 20,507 coins
-2,310,000  to 2,520,000 | 10,253 coins
-2,520,000 to 2,730,000 | 5,126 coins
-2,730,000 to 2,940,000 | 2,563 coins
-2,940,000 to 3,150,000 | 1,281 coins
-3,150,000 to 3,360,000 | 640 coins
-3,360,000 to 3,570,000 | 320 coins
-3,570,000  to 3,780,000 | 160 coins
-3,780,000 to 3,780,000 | 80 coins
-3,780,000 to 3,990,000 | 40 coins
+0 to 210,000 | 50 coin block reward
+210,000 to 420,000 | 25 coin block reward
+420,000 to 630,000 | 12.5 coin block reward
+630,000 to 840,000 | 6.25 coin block reward
+840,000 to 1,050,000 | 3.125 coin block reward
+1,050,000 to 1,260,000 | 1.5625 coin block reward
+1,260,000 to 1,470,000 | 0.78125 coin block reward
+1,470,000 to 1,680,000 | 0.390625 coin block reward
+1,680,000 to 1,890,000 | 0.1953125 coin block reward
+1,890,000 to 2,310,000 | 0.09765625 coin block reward
+2,310,000  to 2,520,000 | 0.048828125 coin block reward
+
 
 ## Resources
 
-* [Blockchain Explorer](https://weekendpool.net/explorer/IBH)
-* [Mining Pool #1](https://weekendpool.net/)
-* [Mining Pool #2](https://pool.ibithub.com/MPOS/public)
-* [White Paper](https://www.ibithub.com/whitepaper.PDF)
+* [Blockchain Explorer](http://explorer.ibithub.com:12555/)
+* [Mining](https://miningpoolstats.stream/ibithub)
+* [White Paper](https://docs.wixstatic.com/ugd/08915d_c3beeb41435949099d2bd4a30340a3cc.pdf)
 
 ### Community
 
-* [BitcoinTalk](https://bitcointalk.org/index.php?topic=4961073)
+
 * [Discord](https://discord.gg/KfS3FSf)
+
+* [Twitter](https://twitter.com/goplayonline)
 * [Facebook](https://www.facebook.com/IBITHUB/)
 * [Reddit](https://www.reddit.com/user/iBitHub)
 
