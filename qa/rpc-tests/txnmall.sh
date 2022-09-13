@@ -142,3 +142,4 @@ exit 0
 echo "Tests successful, cleaning up"
 rm -rf $D
 exit 0
+
