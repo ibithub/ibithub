@@ -1,4 +1,30 @@
+ # :rocket: You Have Found our Hidden Gem :rocket:
+</hr>
+
+# **Welcome to the iBitHub Blockchain Project!**
+
+
+> “It might make sense just to get some in case it catches on.”</br></br>— Satoshi Nakamoto
+
+
+## More Information
+The iBitHub project is formed by a dedicated team based in the US. Formed by blockchain enthusiasts, the project complies with relevant laws and didn’t carry out an ICO for funding. Their aim is to drive adoption in the United States and help people understand the benefits of distributed ledger technology. Specifically, iBitHub is registered, complying with the rules and regulations set out by the state of Wyoming. This makes iBH, the native currency of the iBitHub blockchain, a true United States Digital Currency.
+
+iBitHub is a Blockchain Technology, cloned from Litecoin. iBH is a Pure-Passion-Project technology that has been running since 2018. Most projects have raised Millions or even Billions from investors, but iBH is like Bitcoin, where Satoshi Nakamoto did not have an ICO. This puts iBH in a different category than many cryptocurrency projects.
+
+Technology is all about Passion. The passion for research and to find solutions that are different, yet efficient, simple to use, and cheap. Cost and necessities can be one of the main drives for Innovation. This is when existing solutions are improved to slash costs or make the user experience better.
+
+When Satoshi was Forced to create Bitcoin, he did it out of Passion. His aim was to solve a problem: To cut out banks and to empower people to be their own bank as the world’s banking system caved in at the height of the Great Financial Crisis. The same passion is behind iBitHub.
+
+> "The design supports a tremendous variety of possible transaction types that I designed years ago. Escrow transactions, bonded contracts, third party arbitration, multi-party signature, etc. If Bitcoin catches on in a big way, these are things we’ll want to explore in the future, but they all had to be designed at the beginning to make sure they would be possible later."
+
+>― Satoshi Nakamoto
+</br>
+</hr>
+
 # iBitHub [IBH] Source Code
+
+</hr>
 
 ## License
 
@@ -31,9 +57,9 @@ ICO | N/A
 ## Blockrewards
 Block Number | Reward
 --- | ---
-0 to 210,000 | 50 coin block reward
-210,000 to 420,000 | 25 coin block reward
-420,000 to 630,000 | 12.5 coin block reward
+0 to 210,000 | 50 coin block reward ✔️
+210,000 to 420,000 | 25 coin block reward ✔️
+420,000 to 630,000 | 12.5 coin block reward ✔️
 630,000 to 840,000 | 6.25 coin block reward
 840,000 to 1,050,000 | 3.125 coin block reward
 1,050,000 to 1,260,000 | 1.5625 coin block reward
