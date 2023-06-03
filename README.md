@@ -3,10 +3,15 @@
 
 # **Welcome to the iBitHub Blockchain Project!**
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Max Supply of just 21 Million!* </br>
 
-> “It might make sense just to get some in case it catches on.”</br></br>— Satoshi Nakamoto
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find iBitHub ( IBH ) at [SouthXchange.com </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :hotsprings:    :hotsprings:   *IBH / BTC - Crypto Market*](https://main.southxchange.com/Market/Book/IBH/BTC)    :hotsprings:   :hotsprings:
 
 
+
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“It might make sense just to get some in case it catches on.”</br></br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — Satoshi Nakamoto
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲
 ## More Information
 The iBitHub project is formed by a dedicated team based in the US. Formed by blockchain enthusiasts, the project complies with relevant laws and didn’t carry out an ICO for funding. Their aim is to drive adoption in the United States and help people understand the benefits of distributed ledger technology. Specifically, iBitHub is registered, complying with the rules and regulations set out by the state of Wyoming. This makes iBH, the native currency of the iBitHub blockchain, a true United States Digital Currency.
 
@@ -103,6 +108,8 @@ We believe in keeping iBitHub free and open. Any donations to help fuel the deve
 ## Special Shout Outs
 
 Special thanks to the following people that have helped make iBitHub possible.
+
+This site was built using [GitHub Pages](https://pages.github.com/).
 
 
 
