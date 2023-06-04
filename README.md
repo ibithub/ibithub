@@ -107,9 +107,9 @@ We believe in keeping iBitHub free and open. Any donations to help fuel the deve
 
 ## Special Shout Outs
 
-Special thanks to the following people that have helped make iBitHub possible.
+## _HUGE THANKS_ to the _LEGENDS_ that help make _iBitHub_ possible.
 
-This site was built using [GitHub Pages](https://pages.github.com/).
+
 
 
 
