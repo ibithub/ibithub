@@ -3,15 +3,15 @@
 
 # **Welcome to the iBitHub Blockchain Project!**
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Max Supply of just 21 Million!* </br>
-
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Max Supply of just 21 Million!*
+### Merge Mine Dogecoin (DOGE) when your Mining iBitHub (IBH)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find iBitHub ( IBH ) at [SouthXchange.com </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :hotsprings:    :hotsprings:   *IBH / BTC - Crypto Market*](https://main.southxchange.com/Market/Book/IBH/BTC)    :hotsprings:   :hotsprings:
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 
+> ##   &nbsp;&nbsp;“It might make sense just to get some in case it catches on.”</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+> #       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      — Satoshi Nakamoto
 
-
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“It might make sense just to get some in case it catches on.”</br></br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — Satoshi Nakamoto
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲💲
 ## More Information
 The iBitHub project is formed by a dedicated team based in the US. Formed by blockchain enthusiasts, the project complies with relevant laws and didn’t carry out an ICO for funding. Their aim is to drive adoption in the United States and help people understand the benefits of distributed ledger technology. Specifically, iBitHub is registered, complying with the rules and regulations set out by the state of Wyoming. This makes iBH, the native currency of the iBitHub blockchain, a true United States Digital Currency.
 
@@ -21,9 +21,9 @@ Technology is all about Passion. The passion for research and to find solutions 
 
 When Satoshi was Forced to create Bitcoin, he did it out of Passion. His aim was to solve a problem: To cut out banks and to empower people to be their own bank as the world’s banking system caved in at the height of the Great Financial Crisis. The same passion is behind iBitHub.
 
-> "The design supports a tremendous variety of possible transaction types that I designed years ago. Escrow transactions, bonded contracts, third party arbitration, multi-party signature, etc. If Bitcoin catches on in a big way, these are things we’ll want to explore in the future, but they all had to be designed at the beginning to make sure they would be possible later."
+> ### </br>"So I had to do some reverse engineering and managed to  create the genesis block on 10/7/11."
 
->― Satoshi Nakamoto
+> #       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      — Charlie Lee
 </br>
 </hr>
 
