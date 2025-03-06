@@ -76,7 +76,7 @@ sudo apt-get install libminiupnpc-dev
 # Download iBitHub Source code
 # ----------------------------
 cd ~
-git clone https://github.com/ibithub/ibithubwt.git
+git clone https://github.com/ibithub/ibithub.git
 
 # Bitcoin uses the Berkley DB 4.8
 # We need to install it as well
