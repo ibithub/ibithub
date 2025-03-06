@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The Bitcoin Core developers
-// Copyright (c) 2018-2020 iBitHub Developers
+// Copyright (c) 2018-2025 iBitHub Developers
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
 This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](http://www.openssl.org/). This product includes
@@ -59,6 +59,7 @@ Dependency Build Instructions: Ubuntu & Debian
 
 # Update & Upgrade the System
 sudo apt-get update
+
 sudo apt-get upgrade
 
 # Install dependencies there might be more based on your system
@@ -68,10 +69,15 @@ sudo apt-get upgrade
 # dependency again
 
 sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+
 sudo apt-get install libboost-all-dev
+
 sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
+
 sudo apt-get install libqrencode-dev autoconf openssl libssl-dev libevent-dev
+
 sudo apt-get install libminiupnpc-dev
+
 
 # Download iBitHub Source code
 # ----------------------------
@@ -83,19 +89,29 @@ git clone https://github.com/ibithub/ibithub.git
 # Download & Install Berkley DB
 # -----------------------------
 cd ~
+
 mkdir ibithub/db4/
+
 wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
+
 tar -xzvf db-4.8.30.NC.tar.gz
+
 cd db-4.8.30.NC/build_unix/
+
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=/home/theusername/ibithub/db4/
+
 make install
+
 cd ~
+
 sudo apt-get install libdb++-dev
 
 # Compile iBitHub with Berkley DB 4.8
 # -----------------------------------
 cd ibithub/src
+
 make -f makefile.unix
+
 ./ibithubd
 
 ------------------------------------
