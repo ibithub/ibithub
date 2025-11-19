@@ -1,7 +1,7 @@
 # iBitHub (IBH) Green Lightning Playable
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/ibithub/ibithub?style=social)](https://github.com/ibithub/ibithub)
-[![Block Height](https://img.shields.io/badge/dynamic/json?color=blueviolet&label=block%20height&query=blocks&url=http://explorer.ibithub.com:12555/api/getblockcount)](http://explorer.ibithub.com:12555/)
+
 [![Price](https://img.shields.io/badge/price-%240.0062-brightgreen)](https://www.dex-trade.com/trade/IBH_USDT)
 
 **iBitHub** — U.S.-based, fair-launched Scrypt PoW coin (2018)  
