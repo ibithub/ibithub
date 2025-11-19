@@ -1,143 +1,105 @@
-# Beginner's Guide: How to Start with Bitcoin & Buy iBitHub
+# iBitHub (IBH) Green Lightning Playable
 
-Ready to dive into cryptocurrency? Follow this beginner-friendly guide to buy Bitcoin and exchange it for iBitHub (IBH). 🚀
+[![GitHub Repo stars](https://img.shields.io/github/stars/ibithub/ibithub?style=social)](https://github.com/ibithub/ibithub)
+[![Block Height](https://img.shields.io/badge/dynamic/json?color=blueviolet&label=block%20height&query=blocks&url=http://explorer.ibithub.com:12555/api/getblockcount)](http://explorer.ibithub.com:12555/)
+[![Price](https://img.shields.io/badge/price-%240.0062-brightgreen)](https://www.dex-trade.com/trade/IBH_USDT)
 
----
+**iBitHub** — U.S.-based, fair-launched Scrypt PoW coin (2018)  
+No ICO • No pre-mine • 100% mined • Merge-mined with Dogecoin  
+21 million supply cap • Play-to-earn gaming • Built to last
 
-## Step 1: Download a Trusted App – CashApp
-
-📲 **Get Started**:  
-1. Download **CashApp** on your smartphone.  
-2. Create an account and complete identity verification (a quick, secure process).  
-
----
-
-## Step 2: Link Your Payment Method
-
-💳 **Set Up Payments**:  
-1. Add your bank account or debit card to fund your Bitcoin purchases.  
-2. Follow CashApp's simple linking instructions.  
+> Source code preserved for 1,000 years in GitHub’s Arctic Code Vault
 
 ---
 
-## Step 3: Buy Bitcoin (BTC)
-
-💵 **Purchase BTC**:  
-1. Open the Bitcoin section in CashApp.  
-2. Enter the amount you'd like to buy.  
-3. Confirm the transaction to own your first Bitcoin! 🎉  
-
----
-
-## Step 4: Transfer Bitcoin to XeggeX
-
-🔗 **Secure Your Wallet**:  
-1. Log in to your **XeggeX** account.  
-2. Navigate to the **Wallet Tab** and copy your Bitcoin wallet address.  
-3. In CashApp, send your Bitcoin to this address.  
-
-⏱️ Transfers typically take a few minutes to complete.  
+## Core Specifications
+| Specification                | Value                              |
+|------------------------------|------------------------------------|
+| **Algorithm**                | Scrypt                             |
+| **Consensus**                | Proof of Work (PoW)                |
+| **Merge Mining**             | Yes – with Dogecoin (AuxPoW)       |
+| **Total Supply**             | 21,000,000 IBH                     |
+| **Block Time**               | 5 minutes                          |
+| **Current Reward**           | 6.25 IBH                           |
+| **Halving**                  | Every 210,000 blocks               |
+| **Difficulty Retarget**      | Every block                        |
+| **RPC Port**                 | 2333                               |
+| **P2P Port**                 | 2332                               |
 
 ---
 
-## Step 5: Trade Bitcoin for iBitHub (IBH)
-
-⚡ **Exchange BTC for IBH**:  
-1. Visit the **IBH/BTC market** on XeggeX.  
-2. Trade your Bitcoin for iBitHub (IBH).  
-
-🎉 **Congratulations!** You’re now part of the iBitHub revolution.  
-
----
-# 🌟 iBitHub and Dogecoin: Pioneering a Sustainable Blockchain Future
-
-iBitHub and Dogecoin are redefining the cryptocurrency landscape, merging sustainability with cutting-edge innovation. Together, these forward-thinking cryptocurrencies showcase how decentralized finance can address global energy concerns while delivering efficiency and security.
+## Network Status (November 19, 2025)
+| Specification                | Value                              |
+|------------------------------|------------------------------------|
+| **Block Height**             | 657,676                            |
+| **Circulating Supply**       | 18,547,919 IBH (88.32%)            |
+| **Remaining**                | ~2,452,081 IBH                     |
+| **Daily Issuance**           | 1,728 IBH                          |
+| **Next Halving**             | ~July 2027 (block 840,000)         |
 
 ---
 
-## 🌍 Why iBitHub Stands Out
+## Distribution & Halving Schedule (Full 34 Eras)
+| Era | Block Height | Approx. Year | Reward Before → After     | Coins This Era | Cumulative Mined |
+|-----|--------------|--------------|---------------------------|----------------|------------------|
+| 0   | 0            | 2018         | – → 50 IBH                | 10,500,000     | 50.00%           |
+| 1   | 210,000      | 2021         | 50 → 25 IBH               | 5,250,000      | 75.00%           |
+| 2   | 420,000      | 2023         | 25 → 12.5 IBH             | 2,625,000      | 87.50%           |
+| 3   | 630,000      | 2025         | 12.5 → 6.25 IBH           | 1,312,500      | 93.75%           |
+| 4   | 840,000      | 2027         | 6.25 → 3.125 IBH          | 656,250        | 96.875%          |
+| 5   | 1,050,000    | 2029         | 3.125 → 1.5625 IBH        | 328,125        | 98.4375%         |
+| 6   | 1,260,000    | 2031         | 1.5625 → 0.78125 IBH      | 164,062        | 99.21875%        |
+| 7   | 1,470,000    | 2033         | 0.78125 → 0.390625 IBH    | 82,031         | 99.609375%       |
+| 8   | 1,680,000    | 2035         | 0.390625 → 0.1953125 IBH  | 41,015         | 99.8046875%      |
+| 9   | 1,890,000    | 2037         | 0.1953125 → 0.09765625    | 20,507         | 99.90234375%     |
+| …   | …            | …            | …                         | …              | …                |
+| 20  | 4,200,000    | ~2075        | ~0.0000488 → ~0.0000244   | ~10            | 99.99999…%       |
+| 33  | 6,930,000    | ~2138        | ~0.00000012 → ~0.00000006 | <1             | ≈100%            |
+| 34  | 7,140,000    | ~2140        | Reward < ~0.00000001      | 0              | 100%             |
 
-### 🌱 Eco-Friendly Merge Mining
-Through **Auxiliary Proof of Work (AuxPoW)**, iBitHub enables miners to earn rewards from multiple cryptocurrencies simultaneously, including:
-
-- **Dogecoin (DOGE)**  
-- **Luckycoin (LKY)**  
-- **Dingocoin (DINGO)**  
-- **Pepecoin (PEPE)**  
-
-By leveraging existing energy resources, iBitHub offers one of the most sustainable mining models available today.
-
-- ✅ **No additional energy costs:** A leader in green cryptocurrency innovation.
-
----
-
-### 🚫 True Decentralization
-- **No ICO or premine:** Ensures fair and community-driven ownership.  
-- **Transparent governance:** Decisions shaped by the community, not central authorities.  
-- **Independence:** Free from centralized control or external investors.
-
----
-
-### 🔐 Advanced Security and Scalability
-iBitHub’s robust **Proof of Work (PoW)** consensus mechanism delivers:
-- **Effortless scalability:** Supporting growing transaction volumes seamlessly.  
-- **Lightning-fast speeds:** Ensuring a smooth user experience.
+Total supply reaches **exactly 21,000,000 IBH** around year **2140**, just like Bitcoin.
 
 ---
 
-## ⚡ iBitHub’s Vision: A Sustainable Blockchain Ecosystem
+**Quick Links**  
+Website & Wallet → [ibithub.com](https://ibithub.com)  
+Explorer → [explorer.ibithub.com:12555](http://explorer.ibithub.com:12555/)  
+Play-to-Earn Poker → [poker.ibithub.com](https://poker.ibithub.com)  
+Trade → [Dex-Trade IBH/USDT](https://www.dex-trade.com/trade/IBH_USDT)  
+Discord → [discord.gg/KfS3FSf](https://discord.gg/KfS3FSf)  
+X → [@goplayonline](https://twitter.com/goplayonline)
 
-### Accelerated Halving Cycles
-- **Halving every two years** (compared to Bitcoin’s four).  
-- Current block rewards of **12.5 IBH** will reduce to **6.25 IBH**, increasing scarcity and reducing inflation.
-
----
-
-### Neutral and Global Positioning
-iBitHub is a borderless cryptocurrency designed for everyone:
-- **Censorship-resistant:** Immune to government interference.  
-- **Globally accessible:** Available to anyone with internet access.  
-- **Inclusive:** Perfect for users in both developed and emerging markets.
+**Star** Star • **Mine** • **Play** • **Build**  
+**iBitHub — Green. Scarce. Playable.**
 
 ---
 
-## 🔧 Key Technical Specifications
+## Building iBitHub
+```bash
+git clone https://github.com/ibithub/ibithub.git
+cd ibithub/src
 
-| Specification        | Value                     |
-|-----------------------|---------------------------|
-| **Algorithm**         | Scrypt                   |
-| **Consensus Mechanism**| Proof of Work (PoW)     |
-| **Merge Mining**      | Yes, integrated with Dogecoin |
-| **Total Supply**      | 21,000,000 IBH           |
-| **RPC Port**          | 2333                     |
-| **Difficulty Adjustment**| Every block          |
+make -f makefile.unix
+./ibithubd
 
----
+Build requirements
 
-## 🔧 How to Get Started with iBitHub
+sudo apt-get install build-essential
+sudo apt-get install libssl-dev
 
-### Option 1: Start Mining iBitHub
-1. **Choose mining hardware**: Opt for Scrypt-compatible devices like the **Goldshell Mini Doge III**.  
-2. **Join a mining pool**: Select a pool supporting iBitHub and AuxPoW mining.  
-3. **Start earning rewards**: Earn iBitHub and merge-mined cryptocurrencies effortlessly.
+Ubuntu 12.04
 
-### Option 2: Buy iBitHub on Exchanges
-1. **Set up a wallet**: Create a secure wallet to store your IBH.  
-2. **Purchase IBH**: Use Bitcoin or fiat currency on supported exchanges.  
-3. **Withdraw IBH**: Transfer your IBH to your personal wallet for safekeeping.
+sudo apt-get install libboost-all-dev
 
----
+Other Ubuntu / Debian
 
-## 🚀 Why iBitHub is Positioned to Lead
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+sudo apt-get install libboost1.37-dev
 
-- **Sustainability at its Core**: Eco-friendly mining gives iBitHub a distinct advantage.  
-- **Ethics-Driven**: Decentralized governance ensures fair practices and decision-making.  
-- **Global Reach**: Built for mass adoption across diverse markets.
+(If using Boost 1.37, append -mt to the boost libraries in the makefile)Optional (UPnP)bash
 
----
+sudo apt-get install libminiupnpc-dev
 
-# 🌟 Join the iBitHub Revolution Today!
+Warning: Use Berkeley DB 4.8 only — newer versions break wallet compatibility.
+Last updated: November 19, 2025
 
-Become part of the movement shaping the future of blockchain. Start mining, trading, or using iBitHub today, and contribute to a sustainable, innovative, and fair ecosystem.
-
-Together, we’re building a better blockchain future—don’t miss out!
