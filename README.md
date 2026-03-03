@@ -74,12 +74,12 @@ Wallet compatibility **requires** Berkeley DB **4.8** and OpenSSL **1.0.2u**.
 
 1. **Update system & install dependencies**
 
-```bash
+```
 sudo apt update
 sudo apt install -y build-essential git libboost-all-dev libminiupnpc-dev libevent-dev \
                     automake autotools-dev pkg-config
 ```
-Build Berkeley DB 4.8 from sourcebash
+Build Berkeley DB 4.8 from source
 ```
 cd ~
 wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
@@ -91,7 +91,7 @@ sudo make install
 ```
 → Installs to /usr/local/BerkeleyDB.4.8
 
-Build OpenSSL 1.0.2u from sourcebash
+Build OpenSSL 1.0.2u from source
 ```
 cd ~
 wget https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz
@@ -103,7 +103,7 @@ sudo make install
 ```
 → Installs to /usr/local/openssl-1.0.2
 
-Clone the repositorybash
+Clone the repository
 ```
 cd ~
 git clone https://github.com/ibithub/ibithub.git
@@ -155,7 +155,7 @@ Start Ubuntu 18.04 container
 ```
 docker run -it --name ibithub-build ubuntu:18.04 /bin/bash
 ```
-Inside the container — install dependencies & follow Option 1 stepsbash
+Inside the container — install dependencies & follow Option 1 steps
 ```
 apt update
 apt install -y build-essential git libboost-all-dev libminiupnpc-dev libevent-dev \
@@ -163,7 +163,7 @@ apt install -y build-essential git libboost-all-dev libminiupnpc-dev libevent-de
 ```
 Then repeat steps 2–6 from Option 1 inside the container.
 
-Copy binaries to host (from another terminal)bash
+Copy binaries to host (from another terminal)
 ```
 docker cp ibithub-build:/root/ibithub/src/ibithubd .
 docker cp ibithub-build:/root/ibithub/src/ibithub-cli .
