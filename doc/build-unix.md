@@ -9,212 +9,120 @@ cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cry
 UNIX BUILD NOTES
 ====================
 
-To Build
----------------------
+## Building iBitHub 🛠️
 
-	cd src/
-	make -f makefile.unix		# Headless ibithub
+**iBitHub** is a Litecoin 0.8-era Scrypt fork.  
+Wallet compatibility **requires** Berkeley DB **4.8** and OpenSSL **1.0.2u**.
 
-See readme-qt.rst for instructions on building Ibithub-Qt, the graphical user interface.
+> ⚠️ **Do not** use newer versions of OpenSSL or Berkeley DB — they will break wallet compatibility or fail to build.
 
-Dependencies
----------------------
+### Option 1 — Native Build on Ubuntu 18.04 LTS (Recommended for simplicity)
 
- Library     Purpose           Description
- -------     -------           -----------
- libssl      SSL Support       Secure communications
- libdb4.8    Berkeley DB       Blockchain & wallet storage
- libboost    Boost             C++ Library
- miniupnpc   UPnP Support      Optional firewall-jumping support
+1. **Update system & install dependencies**
 
-[miniupnpc](http://miniupnp.free.fr/) may be used for UPnP port mapping.  It can be downloaded from [here](
-http://miniupnp.tuxfamily.org/files/).  UPnP support is compiled in and
-turned off by default.  Set USE_UPNP to a different value to control this:
+```bash
+sudo apt update
+sudo apt install -y build-essential git libboost-all-dev libminiupnpc-dev libevent-dev \
+                    automake autotools-dev pkg-config
+```
+Build Berkeley DB 4.8 from sourcebash
+```
+cd ~
+wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
+tar -xzf db-4.8.30.NC.tar.gz
+cd db-4.8.30.NC/build_unix
+../dist/configure --enable-cxx --disable-shared --with-pic
+make -j$(nproc)
+sudo make install
+```
+→ Installs to /usr/local/BerkeleyDB.4.8
 
-	USE_UPNP=     No UPnP support miniupnp not required
-	USE_UPNP=0    (the default) UPnP support turned off by default at runtime
-	USE_UPNP=1    UPnP support turned on by default at runtime
+Build OpenSSL 1.0.2u from sourcebash
+```
+cd ~
+wget https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz
+tar -xzf openssl-1.0.2u.tar.gz
+cd openssl-1.0.2u
+./config --prefix=/usr/local/openssl-1.0.2 no-shared no-threads -fPIC
+make -j$(nproc)
+sudo make install
+```
+→ Installs to /usr/local/openssl-1.0.2
 
-IPv6 support may be disabled by setting:
-
-	USE_IPV6=0    Disable IPv6 support
-
-Licenses of statically linked libraries:
- Berkeley DB   New BSD license with additional requirement that linked
-               software must be free open source
- Boost         MIT-like license
- miniupnpc     New (3-clause) BSD license
-
-- Versions used in this release:
--  GCC           4.3.3
--  OpenSSL       1.0.1c
--  Berkeley DB   4.8.30.NC
--  Boost         1.37
--  miniupnpc     1.6
-
-Dependency Build Instructions: Ubuntu & Debian
-----------------------------------------------
-
-# Compile iBitHub Core on Ubuntu 16.04 LTS
-
-# Update & Upgrade the System
-sudo apt-get update
-
-sudo apt-get upgrade
-
-# Install dependencies there might be more based on your system
-# However below instructions are for the fresh Ubuntu install/server
-# Please carefully watch the logs because if something could not be install
-# You have to make sure it is installed properly by trying the command or that particular
-# dependency again
-
-sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
-
-sudo apt-get install libboost-all-dev
-
-sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
-
-sudo apt-get install libqrencode-dev autoconf openssl libssl-dev libevent-dev
-
-sudo apt-get install libminiupnpc-dev
-
-
-# Download iBitHub Source code
-# ----------------------------
+Clone the repositorybash
+```
 cd ~
 git clone https://github.com/ibithub/ibithub.git
-
-# Bitcoin uses the Berkley DB 4.8
-# We need to install it as well
-# Download & Install Berkley DB
-# -----------------------------
-cd ~
-
-mkdir ibithub/db4/
-
-wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
-
-tar -xzvf db-4.8.30.NC.tar.gz
-
-cd db-4.8.30.NC/build_unix/
-
-../dist/configure --enable-cxx --disable-shared --with-pic --prefix=/home/theusername/ibithub/db4/
-
-make install
-
-cd ~
-
-sudo apt-get install libdb++-dev
-
-# Compile iBitHub with Berkley DB 4.8
-# -----------------------------------
 cd ibithub/src
+```
+Update makefile.unix — add near the top:
+```
+BDB_PREFIX = /usr/local/BerkeleyDB.4.8
+OPENSSL_PREFIX = /usr/local/openssl-1.0.2
 
-make -f makefile.unix
+CXXFLAGS += -I$(BDB_PREFIX)/include -I$(OPENSSL_PREFIX)/include \
+            -Wno-deprecated-declarations -Wno-error
+LDFLAGS  += -L$(BDB_PREFIX)/lib -L$(OPENSSL_PREFIX)/lib
+LIBS     += -ldb_cxx -lssl -lcrypto \
+            -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread
+```
+Remove any reference to alert.o if it exists.
 
-./ibithubd
+Build
+```
+make -f makefile.unix clean
+make -f makefile.unix -j$(nproc)
+```
+→ Produces ibithubd and ibithub-cli
 
-------------------------------------
+Run iBitHub
+```
+export LD_LIBRARY_PATH=/usr/local/openssl-1.0.2/lib:$LD_LIBRARY_PATH
+./ibithubd -daemon
+```
+Create a minimal ~/.ibithub/ibithub.conf:
+```
+rpcuser=youruser
+rpcpassword=yourpass
+```
+Option 2 — Containerized Deterministic Build on modern Ubuntu (e.g. 25.10)
 
-Build requirements:
+Modern Ubuntu versions ship OpenSSL 3.x and incompatible toolchains → use an Ubuntu 18.04 Docker container for a reproducible legacy environment.
 
-	sudo apt-get install build-essential
-	sudo apt-get install libssl-dev
+Install Docker on host
+```
+sudo apt update
+sudo apt install -y docker.io
+sudo systemctl enable --now docker
+sudo usermod -aG docker $USER
+newgrp docker
+```
+Start Ubuntu 18.04 container
+```
+docker run -it --name ibithub-build ubuntu:18.04 /bin/bash
+```
+Inside the container — install dependencies & follow Option 1 stepsbash
+```
+apt update
+apt install -y build-essential git libboost-all-dev libminiupnpc-dev libevent-dev \
+               wget automake autotools-dev pkg-config
+```
+Then repeat steps 2–6 from Option 1 inside the container.
 
+Copy binaries to host (from another terminal)bash
+```
+docker cp ibithub-build:/root/ibithub/src/ibithubd .
+docker cp ibithub-build:/root/ibithub/src/ibithub-cli .
+```
+Important Notes:
 
-for Ubuntu 12.04:
+Always use Berkeley DB 4.8 and OpenSSL 1.0.2u for compatibility.
 
-	sudo apt-get install libboost-all-dev
+Set export LD_LIBRARY_PATH=/usr/local/openssl-1.0.2/lib:$LD_LIBRARY_PATH every time before running ibithubd or ibithub-cli.
 
- db4.8 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
+Docker/container builds are deterministic — highly recommended on Ubuntu 20.04+ / 22.04+ / 24.04+ / 25.10 to avoid toolchain/OpenSSL mismatches.
 
- Ubuntu precise has packages for libdb5.1-dev and libdb5.1++-dev,
- but using these will break binary wallet compatibility, and is not recommended.
+These instructions are updated March 2026 — test on fresh VMs/containers.
 
-for other Ubuntu & Debian:
-
-	sudo apt-get install libdb4.8-dev
-	sudo apt-get install libdb4.8++-dev
-	sudo apt-get install libboost1.37-dev
- (If using Boost 1.37, append -mt to the boost libraries in the makefile)
-
-Optional:
-
-	sudo apt-get install libminiupnpc-dev (see USE_UPNP compile flag)
-
-
-Notes
------
-The release is built with GCC and then "strip bitcoind" to strip the debug
-symbols, which reduces the executable size by about 90%.
-
-
-miniupnpc
----------
-	tar -xzvf miniupnpc-1.6.tar.gz
-	cd miniupnpc-1.6
-	make
-	sudo su
-	make install
-
-
-Berkeley DB
------------
-You need Berkeley DB 4.8.  If you have to build Berkeley DB yourself:
-
-	../dist/configure --enable-cxx
-	make
-
-
-Boost
------
-If you need to build Boost yourself:
-
-	sudo su
-	./bootstrap.sh
-	./bjam install
-
-
-Security
---------
-To help make your ibithub installation more secure by making certain attacks impossible to
-exploit even if a vulnerability is found, you can take the following measures:
-
-* Position Independent Executable
-    Build position independent code to take advantage of Address Space Layout Randomization
-    offered by some kernels. An attacker who is able to cause execution of code at an arbitrary
-    memory location is thwarted if he doesn't know where anything useful is located.
-    The stack and heap are randomly located by default but this allows the code section to be
-    randomly located as well.
-
-    On an Amd64 processor where a library was not compiled with -fPIC, this will cause an error
-    such as: "relocation R_X86_64_32 against `......' can not be used when making a shared object;"
-
-    To build with PIE, use:
-    make -f makefile.unix ... -e PIE=1
-
-    To test that you have built PIE executable, install scanelf, part of paxutils, and use:
-
-    	scanelf -e ./ibithub
-
-    The output should contain:
-     TYPE
-    ET_DYN
-
-* Non-executable Stack
-    If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, bitcoin should be built with a non-executable stack
-    but if one of the libraries it uses asks for an executable stack or someone makes a mistake
-    and uses a compiler extension which requires an executable stack, it will silently build an
-    executable without the non-executable stack protection.
-
-    To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./ibithub`
-
-    the output should contain:
-	STK/REL/PTL
-	RW- R-- RW-
-
-    The STK RW- means that the stack is readable and writeable but not executable.
-
-
+Happy building!
+Star the repo if this helps →
