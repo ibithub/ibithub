@@ -70,7 +70,8 @@
 | Resource                  | Link |
 |---------------------------|------|
 | **Website & Wallet**      | [ibithub.com](https://ibithub.com) |
-| **Block Explorer**        | [explorer.ibithub.com](http://explorer.ibithub.com:12555/) |
+| **Main Explorer**         | [ibh-explorer.ibithub.com](https://ibh-explorer.ibithub.com) |
+| **Explorer 2 (Legacy)**   | [explorer.ibithub.com:12555](http://explorer.ibithub.com:12555/) |
 | **Play-to-Earn Poker**    | [poker.ibithub.com](https://poker.ibithub.com) |
 | **Discord**               | [discord.gg/KfS3FSf](https://discord.gg/KfS3FSf) |
 | **X (Twitter)**           | [@goplayonline](https://twitter.com/goplayonline) |
